@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +19,7 @@ import com.infy.user.login.entity.User;
 import com.infy.user.login.service.UserService;
 
 import lombok.extern.slf4j.*;
-
+@CrossOrigin(origins = "http://localhost:9091")
 @RestController
 @Slf4j
 public class UserController {
